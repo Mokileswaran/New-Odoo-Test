@@ -6,21 +6,22 @@ import org.openqa.selenium.WebDriver;
 public class SalesPage {
     WebDriver driver;
 
-    By menuToggle = By.xpath("//i[@class=\"oi oi-apps\"]");
-    //By menuToggle = By.xpath("//i[@class=\"oi oi-apps\"] or contains(@class,'o_appswitcher')]");
-    By salesMenu = By.xpath("//a[@role='menuitem']//span[contains(text(),'Sales')]");
-    By quotations = By.xpath("//a[@role='menuitem']//span[contains(text(),'Quotations')]");
+
+    By menuToggle = By.xpath("//i[@class='oi oi-apps']");
+    By salesMenu = By.xpath("//div[contains(text(),'Sales')]");
 
     public SalesPage(WebDriver driver) {
         this.driver = driver;
     }
-
     public void goToQuotations() throws InterruptedException {
         driver.findElement(menuToggle).click();
-        Thread.sleep(2000); // wait 2 seconds
+        Thread.sleep(4000); // wait 2 seconds
         driver.findElement(salesMenu).click();
-        Thread.sleep(2000); // wait 2 seconds
-        driver.findElement(quotations).click();
-        Thread.sleep(2000); // wait 2 seconds
+        Thread.sleep(4000);
+    }
+
+    public void reopenMenu() throws InterruptedException {
+        driver.findElement(menuToggle).click();
+        Thread.sleep(4000);
     }
 }

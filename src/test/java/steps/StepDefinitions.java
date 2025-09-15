@@ -27,16 +27,17 @@ public class StepDefinitions {
 
     @Then("I navigate to Sales and view Quotations list")
     public void i_navigate_to_sales_and_view_quotations_list() throws InterruptedException {
-        salesPage = new SalesPage(driver);
+        SalesPage salesPage = new SalesPage(driver);
         salesPage.goToQuotations();
     }
 
-    @Then("I navigate to Accounting and view Invoices list")
+    @And("I navigate to Accounting and view Invoices list")
     public void i_navigate_to_accounting_and_view_invoices_list() throws InterruptedException {
-        accountingPage = new AccountingPage(driver);
+        SalesPage salesPage = new SalesPage(driver);
+        salesPage.reopenMenu(); // open app switcher again
+        AccountingPage accountingPage = new AccountingPage(driver);
         accountingPage.goToInvoices();
     }
-
     @Then("I navigate to Settings and view API logs")
     public void i_navigate_to_settings_and_view_api_logs() throws InterruptedException {
         settingsPage = new SettingsPage(driver);
