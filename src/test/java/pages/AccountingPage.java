@@ -30,6 +30,7 @@ public class AccountingPage {
 
 
         // Click Customers
+
         driver.findElement(customersMenu).click();
         Thread.sleep(3000);
 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/src/test/java/pages/AccountingPage.java;C:/Users/pmuki/Desktop/Intelij Files/OdooAutomation/src/test/java/pages/LoginPage.java;C:/Users/pmuki/Desktop/Intelij Files/OdooAutomation/src/test/java/pages/SalesPage.java;C:/Users/pmuki/Desktop/Intelij Files/OdooAutomation/src/test/java/pages/SettingsPage.java;C:/Users/pmuki/Desktop/Intelij Files/OdooAutomation/src/test/java/runners/TestRunner.java;C:/Users/pmuki/Desktop/Intelij Files/OdooAutomation/src/test/java/steps/StepDefinitions.java" />
+  </component>
+</project>
